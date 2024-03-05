@@ -1,0 +1,102 @@
+.header {
+  width: 100vw;
+  height: 26vh;
+  display: flex;
+  flex: none;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-image: url(/assets/img/back.jpg);
+  overflow: hidden
+}
+
+.logo {padding: 20px;}
+.logo:hover {
+  -webkit-transform: rotate(120deg);
+  transform: rotate(120deg);
+        }
+
+.h1, .navigation, .goodbye {
+  font-family: "Madimi One", sans-serif;
+  font-style: normal;
+}
+
+.h1 {
+align-self: center;
+font-size: 60px;
+color: deeppink;
+text-shadow: 34px 27px rgba(188, 100, 183, 0.6), 60px 45px rgba(107, 102, 244, 0.3)
+}
+
+
+.navigation { 
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+
+li {
+  padding: 7px
+}
+
+li :before { 
+    content: url(/assets/img/minimushroom1.png)
+  }
+
+  li :hover {text-decoration: underline;
+  color:green;}
+
+  a { 
+    text-decoration: none;
+    color: blueviolet;}
+
+  .cursor {
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: darkblue;
+  }
+
+  .main {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+  .image {width: 150px;
+  height: 160px;
+  filter: alpha (Opacity=50);
+  opacity: 0.5;    
+}
+
+.image:hover {
+filter: alpha (Opacity=100);
+opacity: 1;
+}
+
+  .main :nth-child(even) {align-self: flex-end;}
+  .main :nth-child(odd) {align-self: flex-start;}
+
+  .footer {
+    width: 100vw;
+    height: 26vh;
+    background-image: url(/assets/img/back.jpg);
+    transform: rotate(180deg);
+    overflow: hidden;
+  }
+
+  .goodbye {
+    text-align: center;
+    font-size: 32px;
+    color: rgb(89, 13, 89);
+    transform: rotate(180deg);
+    margin-top: 55px;
+  }
